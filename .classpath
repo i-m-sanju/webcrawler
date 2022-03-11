@@ -7,5 +7,9 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="jsoup-1.11.2.jar"/>
+	<classpathentry kind="lib" path="/connecting/bson-3.12.10.jar"/>
+	<classpathentry kind="lib" path="/connecting/mongodb-driver-3.12.10.jar"/>
+	<classpathentry kind="lib" path="/connecting/mongodb-driver-core-3.12.10.jar"/>
+	<classpathentry kind="lib" path="gson-2.2.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
