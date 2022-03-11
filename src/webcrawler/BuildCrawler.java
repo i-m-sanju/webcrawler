@@ -21,7 +21,7 @@ import modal.*;
 
 public class BuildCrawler {
 	public static void main(String[] arg) {
-		new BuildCrawler().getLinks("https://www.shiksha.com/");
+		new BuildCrawler().getLinks("https://www.kccitm.edu.in/");
 
 	}
 	
@@ -66,7 +66,7 @@ public class BuildCrawler {
 			
 				org.jsoup.nodes.Document document = Jsoup.connect(url).get(); //gets HTML content on the url
 //				Elements nav = document.select("li.g_levl");
-				Elements linksonpage = document.select("div.submenu2 a[href]");
+				Elements linksonpage = document.select("a[href]");
 				System.out.println("Hello");
 //				System.out.println(linksonpage);
 				
@@ -78,7 +78,7 @@ public class BuildCrawler {
 						Thread.sleep(500);
 						String url2=header.attr("href");
 
-					url2 = url2.contains("https://www.shiksha.com")? null : "https://www.shiksha.com"+url2;
+					url2 = url2.contains("https://www.kccitm.edu.in")? null : "https://www.kccitm.edu.in"+url2;
 						
 						getLinks(url2);
 						
